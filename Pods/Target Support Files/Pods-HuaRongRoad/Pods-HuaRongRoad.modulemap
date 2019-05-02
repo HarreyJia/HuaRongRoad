@@ -1,0 +1,6 @@
+framework module Pods_HuaRongRoad {
+  umbrella header "Pods-HuaRongRoad-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,6 +14,9 @@
 		04ECDC6922799E97009CA390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6722799E97009CA390 /* LaunchScreen.storyboard */; };
 		04ECDC7422799E97009CA390 /* HuaRongRoadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDC7322799E97009CA390 /* HuaRongRoadTests.swift */; };
 		04ECDC7F22799E97009CA390 /* HuaRongRoadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDC7E22799E97009CA390 /* HuaRongRoadUITests.swift */; };
+		9EC26E443288953ED9AC234C /* Pods_HuaRongRoadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1B3C19FB3A62B370B93B38 /* Pods_HuaRongRoadTests.framework */; };
+		B8EDCBBCC5AD01859A14D4EF /* Pods_HuaRongRoadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7773DD85CD1EE277194858C /* Pods_HuaRongRoadUITests.framework */; };
+		BD9AFF5210BE70EECB596D25 /* Pods_HuaRongRoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658F819A595A16565FB3547F /* Pods_HuaRongRoad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		04ECDC7A22799E97009CA390 /* HuaRongRoadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuaRongRoadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECDC7E22799E97009CA390 /* HuaRongRoadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaRongRoadUITests.swift; sourceTree = "<group>"; };
 		04ECDC8022799E97009CA390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078751878391BE920EA72391 /* Pods-HuaRongRoadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuaRongRoadTests.release.xcconfig"; path = "Target Support Files/Pods-HuaRongRoadTests/Pods-HuaRongRoadTests.release.xcconfig"; sourceTree = "<group>"; };
+		54DF434C88FAABA745A63EC3 /* Pods-HuaRongRoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuaRongRoad.release.xcconfig"; path = "Target Support Files/Pods-HuaRongRoad/Pods-HuaRongRoad.release.xcconfig"; sourceTree = "<group>"; };
+		5A6A53BC5E9841002CDAF743 /* Pods-HuaRongRoadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuaRongRoadUITests.release.xcconfig"; path = "Target Support Files/Pods-HuaRongRoadUITests/Pods-HuaRongRoadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		658F819A595A16565FB3547F /* Pods_HuaRongRoad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuaRongRoad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D1120E9F54AE303086EC0C /* Pods-HuaRongRoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuaRongRoad.debug.xcconfig"; path = "Target Support Files/Pods-HuaRongRoad/Pods-HuaRongRoad.debug.xcconfig"; sourceTree = "<group>"; };
+		CC1B3C19FB3A62B370B93B38 /* Pods_HuaRongRoadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuaRongRoadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E342BA58CFF312FEF6B92161 /* Pods-HuaRongRoadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuaRongRoadUITests.debug.xcconfig"; path = "Target Support Files/Pods-HuaRongRoadUITests/Pods-HuaRongRoadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7773DD85CD1EE277194858C /* Pods_HuaRongRoadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuaRongRoadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB06503004DAF2B67D88A6C9 /* Pods-HuaRongRoadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuaRongRoadTests.debug.xcconfig"; path = "Target Support Files/Pods-HuaRongRoadTests/Pods-HuaRongRoadTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9AFF5210BE70EECB596D25 /* Pods_HuaRongRoad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC26E443288953ED9AC234C /* Pods_HuaRongRoadTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8EDCBBCC5AD01859A14D4EF /* Pods_HuaRongRoadUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				04ECDC7222799E97009CA390 /* HuaRongRoadTests */,
 				04ECDC7D22799E97009CA390 /* HuaRongRoadUITests */,
 				04ECDC5C22799E96009CA390 /* Products */,
+				D1C9F38672F7F4D3C1D37F61 /* Pods */,
+				3D4A3F2AC5E7D1E34E56C4F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,30 @@
 			path = HuaRongRoadUITests;
 			sourceTree = "<group>";
 		};
+		3D4A3F2AC5E7D1E34E56C4F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				658F819A595A16565FB3547F /* Pods_HuaRongRoad.framework */,
+				CC1B3C19FB3A62B370B93B38 /* Pods_HuaRongRoadTests.framework */,
+				E7773DD85CD1EE277194858C /* Pods_HuaRongRoadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1C9F38672F7F4D3C1D37F61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7D1120E9F54AE303086EC0C /* Pods-HuaRongRoad.debug.xcconfig */,
+				54DF434C88FAABA745A63EC3 /* Pods-HuaRongRoad.release.xcconfig */,
+				FB06503004DAF2B67D88A6C9 /* Pods-HuaRongRoadTests.debug.xcconfig */,
+				078751878391BE920EA72391 /* Pods-HuaRongRoadTests.release.xcconfig */,
+				E342BA58CFF312FEF6B92161 /* Pods-HuaRongRoadUITests.debug.xcconfig */,
+				5A6A53BC5E9841002CDAF743 /* Pods-HuaRongRoadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ECDC8322799E97009CA390 /* Build configuration list for PBXNativeTarget "HuaRongRoad" */;
 			buildPhases = (
+				E03CD89D36E82C26D746DD57 /* [CP] Check Pods Manifest.lock */,
 				04ECDC5722799E96009CA390 /* Sources */,
 				04ECDC5822799E96009CA390 /* Frameworks */,
 				04ECDC5922799E96009CA390 /* Resources */,
+				C432D5945A2271C278E33401 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ECDC8622799E97009CA390 /* Build configuration list for PBXNativeTarget "HuaRongRoadTests" */;
 			buildPhases = (
+				88F8A88FC5F7E587F62A99D2 /* [CP] Check Pods Manifest.lock */,
 				04ECDC6B22799E97009CA390 /* Sources */,
 				04ECDC6C22799E97009CA390 /* Frameworks */,
 				04ECDC6D22799E97009CA390 /* Resources */,
@@ -167,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ECDC8922799E97009CA390 /* Build configuration list for PBXNativeTarget "HuaRongRoadUITests" */;
 			buildPhases = (
+				F3FE14F47EAC74435C5E6763 /* [CP] Check Pods Manifest.lock */,
 				04ECDC7622799E97009CA390 /* Sources */,
 				04ECDC7722799E97009CA390 /* Frameworks */,
 				04ECDC7822799E97009CA390 /* Resources */,
@@ -250,6 +295,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88F8A88FC5F7E587F62A99D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuaRongRoadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C432D5945A2271C278E33401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuaRongRoad/Pods-HuaRongRoad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuaRongRoad/Pods-HuaRongRoad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E03CD89D36E82C26D746DD57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuaRongRoad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3FE14F47EAC74435C5E6763 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuaRongRoadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04ECDC5722799E96009CA390 /* Sources */ = {
@@ -430,6 +566,7 @@
 		};
 		04ECDC8422799E97009CA390 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D1120E9F54AE303086EC0C /* Pods-HuaRongRoad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +585,7 @@
 		};
 		04ECDC8522799E97009CA390 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54DF434C88FAABA745A63EC3 /* Pods-HuaRongRoad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +604,7 @@
 		};
 		04ECDC8722799E97009CA390 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB06503004DAF2B67D88A6C9 /* Pods-HuaRongRoadTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +626,7 @@
 		};
 		04ECDC8822799E97009CA390 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078751878391BE920EA72391 /* Pods-HuaRongRoadTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +648,7 @@
 		};
 		04ECDC8A22799E97009CA390 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E342BA58CFF312FEF6B92161 /* Pods-HuaRongRoadUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +669,7 @@
 		};
 		04ECDC8B22799E97009CA390 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6A53BC5E9841002CDAF743 /* Pods-HuaRongRoadUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
