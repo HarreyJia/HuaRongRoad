@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C42152227AB4C3003D7831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42151227AB4C3003D7831 /* ViewController.swift */; };
 		04ECDC5F22799E96009CA390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDC5E22799E96009CA390 /* AppDelegate.swift */; };
-		04ECDC6122799E96009CA390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDC6022799E96009CA390 /* ViewController.swift */; };
 		04ECDC6422799E96009CA390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6222799E96009CA390 /* Main.storyboard */; };
 		04ECDC6622799E97009CA390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6522799E97009CA390 /* Assets.xcassets */; };
 		04ECDC6922799E97009CA390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6722799E97009CA390 /* LaunchScreen.storyboard */; };
@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C42151227AB4C3003D7831 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
 		04ECDC5B22799E96009CA390 /* HuaRongRoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuaRongRoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECDC5E22799E96009CA390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04ECDC6022799E96009CA390 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04ECDC6322799E96009CA390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04ECDC6522799E97009CA390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ECDC6822799E97009CA390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		04ECDC5D22799E96009CA390 /* HuaRongRoad */ = {
 			isa = PBXGroup;
 			children = (
+				04C42151227AB4C3003D7831 /* ViewController.swift */,
 				04ECDC5E22799E96009CA390 /* AppDelegate.swift */,
-				04ECDC6022799E96009CA390 /* ViewController.swift */,
 				04ECDC6222799E96009CA390 /* Main.storyboard */,
 				04ECDC6522799E97009CA390 /* Assets.xcassets */,
 				04ECDC6722799E97009CA390 /* LaunchScreen.storyboard */,
@@ -162,7 +162,6 @@
 				E342BA58CFF312FEF6B92161 /* Pods-HuaRongRoadUITests.debug.xcconfig */,
 				5A6A53BC5E9841002CDAF743 /* Pods-HuaRongRoadUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -392,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ECDC6122799E96009CA390 /* ViewController.swift in Sources */,
+				04C42152227AB4C3003D7831 /* ViewController.swift in Sources */,
 				04ECDC5F22799E96009CA390 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
