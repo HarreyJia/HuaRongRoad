@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04C42152227AB4C3003D7831 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42151227AB4C3003D7831 /* ViewController.swift */; };
+		04C42154227AC86F003D7831 /* gameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42153227AC86F003D7831 /* gameDetailViewController.swift */; };
 		04ECDC5F22799E96009CA390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDC5E22799E96009CA390 /* AppDelegate.swift */; };
 		04ECDC6422799E96009CA390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6222799E96009CA390 /* Main.storyboard */; };
 		04ECDC6622799E97009CA390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6522799E97009CA390 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		04C42151227AB4C3003D7831 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
+		04C42153227AC86F003D7831 /* gameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameDetailViewController.swift; sourceTree = "<group>"; };
 		04ECDC5B22799E96009CA390 /* HuaRongRoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuaRongRoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECDC5E22799E96009CA390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ECDC6322799E96009CA390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				04ECDC6522799E97009CA390 /* Assets.xcassets */,
 				04ECDC6722799E97009CA390 /* LaunchScreen.storyboard */,
 				04ECDC6A22799E97009CA390 /* Info.plist */,
+				04C42153227AC86F003D7831 /* gameDetailViewController.swift */,
 			);
 			path = HuaRongRoad;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C42154227AC86F003D7831 /* gameDetailViewController.swift in Sources */,
 				04C42152227AB4C3003D7831 /* ViewController.swift in Sources */,
 				04ECDC5F22799E96009CA390 /* AppDelegate.swift in Sources */,
 			);
