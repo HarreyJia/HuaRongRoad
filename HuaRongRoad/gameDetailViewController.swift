@@ -56,6 +56,17 @@ class gameDetailViewController: UIViewController {
         GuanYuitem.updateCoordinate(coor: Coordinate(x: (10 - 1) % column, y: (10 - 1) / column))
         containerView.addSubview(GuanYuitem)
         
+        let pawnList: [Int] = [14, 15, 17, 20]
+        for location in pawnList {
+            let pawnItem = PawnSlider.init(frame: CGRect(x: (location - 1) % column * itemWidth, y: (location - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
+            pawnItem.setTitle(title: "卒")
+            pawnItem.width = itemWidth
+            pawnItem.row = row
+            pawnItem.column = column
+            pawnItem.updateCoordinate(coor: Coordinate(x: (location - 1) % column, y: (location - 1) / column))
+            containerView.addSubview(pawnItem)
+        }
+        
         
 //            if index == column * row {
 //                item.alpha = 0

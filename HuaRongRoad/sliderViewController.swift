@@ -155,3 +155,22 @@ class GuanYuSlider: SliderView {
     }
 }
 
+class PawnSlider: SliderView {
+    
+    override func move(to destination: SliderView) {
+        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
+            exchange(destination)
+            return
+        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
+            exchange(destination)
+            return
+        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
+            exchange(destination)
+            return
+        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
+            exchange(destination)
+            return
+        }
+    }
+}
+
