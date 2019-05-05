@@ -50,9 +50,9 @@ class SliderView: UIView {
         fatalError("This class does not support NSCoding")
     }
     
-    func setTitle(title: Int) {
-        titleLabel.text = String(title)
-        count = title - 1
+    func setTitle(title: String) {
+        titleLabel.text = title
+//        count = title - 1
     }
     
     func updateCoordinate(coor: Coordinate) {
@@ -106,3 +106,52 @@ class LordSlider: SliderView {
         }
     }
 }
+
+class GeneralSlider: SliderView {
+    
+    override func updateCoordinate(coor: Coordinate) {
+        coordinate = coor
+        self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: width, height: 2 * width)
+    }
+    
+    override func move(to destination: SliderView) {
+        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
+            exchange(destination)
+            return
+        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
+            exchange(destination)
+            return
+        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
+            exchange(destination)
+            return
+        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
+            exchange(destination)
+            return
+        }
+    }
+}
+
+class GuanYuSlider: SliderView {
+    
+    override func updateCoordinate(coor: Coordinate) {
+        coordinate = coor
+        self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: 2 * width, height: width)
+    }
+    
+    override func move(to destination: SliderView) {
+        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
+            exchange(destination)
+            return
+        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
+            exchange(destination)
+            return
+        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
+            exchange(destination)
+            return
+        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
+            exchange(destination)
+            return
+        }
+    }
+}
+

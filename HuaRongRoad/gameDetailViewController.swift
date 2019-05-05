@@ -30,12 +30,33 @@ class gameDetailViewController: UIViewController {
         }
         
         let item = LordSlider.init(frame: CGRect(x: (2 - 1) % column * itemWidth, y: (2 - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
-        item.setTitle(title: 1)
+        item.setTitle(title: "曹操")
         item.width = itemWidth
         item.row = row
         item.column = column
         item.updateCoordinate(coor: Coordinate(x: (2 - 1) % column, y: (2 - 1) / column))
         containerView.addSubview(item)
+        
+        let generalList: [Int: String] = [1: "张飞", 4: "赵云", 9: "马超", 12: "黄忠"]
+        for item in generalList {
+            let generalItem = GeneralSlider.init(frame: CGRect(x: (item.key - 1) % column * itemWidth, y: (item.key - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
+            generalItem.setTitle(title: item.value)
+            generalItem.width = itemWidth
+            generalItem.row = row
+            generalItem.column = column
+            generalItem.updateCoordinate(coor: Coordinate(x: (item.key - 1) % column, y: (item.key - 1) / column))
+            containerView.addSubview(generalItem)
+        }
+        
+        let GuanYuitem = GuanYuSlider.init(frame: CGRect(x: (10 - 1) % column * itemWidth, y: (10 - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
+        GuanYuitem.setTitle(title: "关羽")
+        GuanYuitem.width = itemWidth
+        GuanYuitem.row = row
+        GuanYuitem.column = column
+        GuanYuitem.updateCoordinate(coor: Coordinate(x: (10 - 1) % column, y: (10 - 1) / column))
+        containerView.addSubview(GuanYuitem)
+        
+        
 //            if index == column * row {
 //                item.alpha = 0
 //                emptyBlock = item;
