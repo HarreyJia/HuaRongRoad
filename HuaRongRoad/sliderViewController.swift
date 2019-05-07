@@ -26,13 +26,6 @@ class SliderView: UIView {
     var width: Int!
     
     var titleLabel: UILabel!
-    
-    var isCorrect:Bool {
-        if count % row == coordinate.x && count / row == coordinate.y {
-            return true
-        }
-        return false
-    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -52,13 +45,14 @@ class SliderView: UIView {
     
     func setTitle(title: String) {
         titleLabel.text = title
-//        count = title - 1
     }
     
     func updateCoordinate(coor: Coordinate) {
         coordinate = coor
         self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: width, height: width)
     }
+    
+    func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String) -> Bool { return true }
     
     /// 判断当前滑块上下左右4个方向是否有空白地方，然后朝空白地方滑过去
     func move(to destination: SliderView) {
@@ -90,20 +84,21 @@ class LordSlider: SliderView {
         self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: 2 * width, height: 2 * width)
     }
     
-    override func move(to destination: SliderView) {
-        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
-            exchange(destination)
-            return
-        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
-            exchange(destination)
-            return
+    override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String) -> Bool {
+        if type == "horizontal" {
+            if (self.coordinate.x == emptyItem1.coordinate.x && self.coordinate.x + 1 == emptyItem2.coordinate.x) || (self.coordinate.x == emptyItem2.coordinate.x && self.coordinate.x + 1 == emptyItem1.coordinate.x) {
+                if self.coordinate.y == emptyItem1.coordinate.y + 1 || self.coordinate.y == emptyItem1.coordinate.y - 2 {
+                    return true
+                }
+            }
+        } else {
+            if (self.coordinate.y == emptyItem1.coordinate.y && self.coordinate.y + 1 == emptyItem2.coordinate.y) || (self.coordinate.y == emptyItem2.coordinate.y && self.coordinate.y + 1 == emptyItem1.coordinate.y) {
+                if self.coordinate.x == emptyItem1.coordinate.x + 1 || self.coordinate.x == emptyItem1.coordinate.x - 2 {
+                    return true
+                }
+            }
         }
+        return false
     }
 }
 
@@ -114,20 +109,21 @@ class GeneralSlider: SliderView {
         self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: width, height: 2 * width)
     }
     
-    override func move(to destination: SliderView) {
-        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
-            exchange(destination)
-            return
-        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
-            exchange(destination)
-            return
+    override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String) -> Bool {
+        if (self.coordinate.y == emptyItem1.coordinate.y && self.coordinate.y + 1 == emptyItem2.coordinate.y) || (self.coordinate.y == emptyItem2.coordinate.y && self.coordinate.y + 1 == emptyItem1.coordinate.y) {
+            if self.coordinate.x == emptyItem1.coordinate.x + 1 || self.coordinate.x == emptyItem1.coordinate.x - 2 {
+                return true
+            }
         }
+
+        if (self.coordinate.x == emptyItem1.coordinate.x && (self.coordinate.y == emptyItem1.coordinate.y + 1 || self.coordinate.y == emptyItem1.coordinate.y - 2)) {
+            return true
+        }
+
+        if (self.coordinate.x == emptyItem2.coordinate.x && (self.coordinate.y == emptyItem2.coordinate.y + 1 || self.coordinate.y == emptyItem2.coordinate.y - 2)) {
+            return true
+        }
+        return false
     }
 }
 
@@ -138,39 +134,45 @@ class GuanYuSlider: SliderView {
         self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: 2 * width, height: width)
     }
     
-    override func move(to destination: SliderView) {
-        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
-            exchange(destination)
-            return
-        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
-            exchange(destination)
-            return
+    override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String) -> Bool {
+        if (self.coordinate.x == emptyItem1.coordinate.x && self.coordinate.x + 1 == emptyItem2.coordinate.x) || (self.coordinate.x == emptyItem2.coordinate.x && self.coordinate.x + 1 == emptyItem1.coordinate.x) {
+            if self.coordinate.y == emptyItem1.coordinate.y + 1 || self.coordinate.y == emptyItem1.coordinate.y - 2 {
+                return true
+            }
         }
+        
+        if (self.coordinate.y == emptyItem1.coordinate.y && (self.coordinate.x == emptyItem1.coordinate.x + 1 || self.coordinate.x == emptyItem1.coordinate.x - 2)) {
+            return true
+        }
+        
+        if (self.coordinate.y == emptyItem2.coordinate.y && (self.coordinate.x == emptyItem2.coordinate.x + 1 || self.coordinate.x == emptyItem2.coordinate.x - 2)) {
+            return true
+        }
+        
+        return false
     }
 }
 
 class PawnSlider: SliderView {
     
-    override func move(to destination: SliderView) {
-        if self.coordinate.x + 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y{
-            exchange(destination)
-            return
-        } else if self.coordinate.x - 1 == destination.coordinate.x && self.coordinate.y == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y + 1 == destination.coordinate.y {
-            exchange(destination)
-            return
-        }else if self.coordinate.x == destination.coordinate.x && self.coordinate.y - 1 == destination.coordinate.y {
-            exchange(destination)
-            return
+    override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String) -> Bool {
+        if (self.coordinate.y == emptyItem1.coordinate.y && (self.coordinate.x == emptyItem1.coordinate.x + 1 || self.coordinate.x == emptyItem1.coordinate.x - 1)) {
+            return true
         }
+        
+        if (self.coordinate.y == emptyItem2.coordinate.y && (self.coordinate.x == emptyItem2.coordinate.x + 1 || self.coordinate.x == emptyItem2.coordinate.x - 1)) {
+            return true
+        }
+        
+        if (self.coordinate.x == emptyItem1.coordinate.x && (self.coordinate.y == emptyItem1.coordinate.y + 1 || self.coordinate.y == emptyItem1.coordinate.y - 1)) {
+            return true
+        }
+        
+        if (self.coordinate.x == emptyItem2.coordinate.x && (self.coordinate.y == emptyItem2.coordinate.y + 1 || self.coordinate.y == emptyItem2.coordinate.y - 1)) {
+            return true
+        }
+        
+        return false
     }
 }
 

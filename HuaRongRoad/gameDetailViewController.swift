@@ -15,7 +15,8 @@ class gameDetailViewController: UIViewController {
     var column = 4
     var itemDictionary = [String:SliderView]()
     var itemWidth: Int!
-    var emptyBlock: SliderView!
+    var emptyBlock1: SliderView!
+    var emptyBlock2: SliderView!
     let gap = 8
     
     @IBOutlet weak var containerView: UIView!
@@ -67,11 +68,75 @@ class gameDetailViewController: UIViewController {
             containerView.addSubview(pawnItem)
         }
         
+    
+        let emptyItem = SliderView.init(frame: CGRect(x: (18 - 1) % column * itemWidth, y: (18 - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
+        emptyItem.alpha = 0
+        emptyItem.width = itemWidth
+        emptyItem.row = row
+        emptyItem.column = column
+        emptyItem.updateCoordinate(coor: Coordinate(x: (18 - 1) % column, y: (18 - 1) / column))
+        emptyBlock1 = emptyItem
+
+        let emptyItem2 = SliderView.init(frame: CGRect(x: (19 - 1) % column * itemWidth, y: (19 - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
+        emptyItem2.alpha = 0
+        emptyItem2.width = itemWidth
+        emptyItem2.row = row
+        emptyItem2.column = column
+        emptyItem2.updateCoordinate(coor: Coordinate(x: (19 - 1) % column, y: (19 - 1) / column))
+        emptyBlock2 = emptyItem2
+    }
+    
+    func judgeEmptyLocation() -> String {
         
-//            if index == column * row {
-//                item.alpha = 0
-//                emptyBlock = item;
+        print(emptyBlock1.coordinate.x, emptyBlock1.coordinate.y)
+        print(emptyBlock2.coordinate.x, emptyBlock2.coordinate.y)
+        
+        if emptyBlock1.coordinate.x == emptyBlock2.coordinate.x && emptyBlock1.coordinate.y + 1 == emptyBlock2.coordinate.y || emptyBlock1.coordinate.y == emptyBlock2.coordinate.y + 1 {
+            return "vertical"
+        } else if emptyBlock1.coordinate.y == emptyBlock2.coordinate.y && emptyBlock1.coordinate.x + 1 == emptyBlock2.coordinate.x || emptyBlock1.coordinate.x == emptyBlock2.coordinate.x + 1 {
+            return "horizontal"
+        } else {
+            return "separated"
+        }
+    }
+    
+    func move(_ item: SliderView) -> Bool {
+        
+        let type = item.titleLabel.text
+        
+        if type == "曹操" {
+            if judgeEmptyLocation() == "separated" {
+                return false
+            }
+        } else if type == "张飞" || type == "赵云" || type == "马超" || type == "黄忠" {
+//            if judgeEmptyLocation() == "separated" || judgeEmptyLocation() == "horizontal" {
+//                return false
 //            }
+        } else if type == "关羽" {
+//            if judgeEmptyLocation() == "separated" || judgeEmptyLocation() == "vertical" {
+//                return false
+//            }
+        }
+        
+        if item.canMove(emptyItem1: emptyBlock1, emptyItem2: emptyBlock2, type: judgeEmptyLocation()) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        for touch in touches {
+            if let item = touch.view as? SliderView {
+                if move(item) {
+                    print("Can Move")
+                } else {
+                    print("Cannot Move")
+                }
+                // checkisSuccessed()
+            }
+            break
+        }
     }
 
     override func didReceiveMemoryWarning() {
