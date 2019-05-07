@@ -84,6 +84,22 @@ class gameDetailViewController: UIViewController {
         emptyItem2.column = column
         emptyItem2.updateCoordinate(coor: Coordinate(x: (19 - 1) % column, y: (19 - 1) / column))
         emptyBlock2 = emptyItem2
+        
+        let swipeUp = UISwipeGestureRecognizer(target:self, action:#selector(swipe(_:)))
+        swipeUp.direction = .up
+        self.view.addGestureRecognizer(swipeUp)
+        
+        let swipeDown = UISwipeGestureRecognizer(target:self, action:#selector(swipe(_:)))
+        swipeDown.direction = .down
+        self.view.addGestureRecognizer(swipeDown)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target:self, action:#selector(swipe(_:)))
+        swipeLeft.direction = .left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        let swipeRight = UISwipeGestureRecognizer(target:self, action:#selector(swipe(_:)))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
     }
     
     func judgeEmptyLocation() -> String {
@@ -100,7 +116,7 @@ class gameDetailViewController: UIViewController {
         }
     }
     
-    func move(_ item: SliderView) -> Bool {
+    func move(_ item: SliderView, direction: String) -> Bool {
         
         let type = item.titleLabel.text
         
@@ -108,34 +124,48 @@ class gameDetailViewController: UIViewController {
             if judgeEmptyLocation() == "separated" {
                 return false
             }
-        } else if type == "张飞" || type == "赵云" || type == "马超" || type == "黄忠" {
-//            if judgeEmptyLocation() == "separated" || judgeEmptyLocation() == "horizontal" {
-//                return false
-//            }
-        } else if type == "关羽" {
-//            if judgeEmptyLocation() == "separated" || judgeEmptyLocation() == "vertical" {
-//                return false
-//            }
         }
         
-        if item.canMove(emptyItem1: emptyBlock1, emptyItem2: emptyBlock2, type: judgeEmptyLocation()) {
+        if item.canMove(emptyItem1: emptyBlock1, emptyItem2: emptyBlock2, type: judgeEmptyLocation(), direction: direction) {
             return true
         } else {
             return false
         }
     }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
-        for touch in touches {
-            if let item = touch.view as? SliderView {
-                if move(item) {
-                    print("Can Move")
+    
+    @objc func swipe(_ recognizer:UISwipeGestureRecognizer){
+        
+        let view = recognizer.view
+        let loc = recognizer.location(in: view)
+        let subview = view?.hitTest(loc, with: nil)
+        let item = subview
+        
+        if item is SliderView {
+            if recognizer.direction == .up{
+                if move(item as! SliderView, direction: "up") {
+                    print("Can up Move")
                 } else {
                     print("Cannot Move")
                 }
-                // checkisSuccessed()
+            } else if recognizer.direction == .down{
+                if move(item as! SliderView, direction: "down") {
+                    print("Can down Move")
+                } else {
+                    print("Cannot Move")
+                }
+            } else if recognizer.direction == .left{
+                if move(item as! SliderView, direction: "left") {
+                    print("Can left Move")
+                } else {
+                    print("Cannot Move")
+                }
+            } else if recognizer.direction == .right{
+                if move(item as! SliderView, direction: "right") {
+                    print("Can right Move")
+                } else {
+                    print("Cannot Move")
+                }
             }
-            break
         }
     }
 
