@@ -98,11 +98,11 @@ class LordSlider: SliderView {
     
     override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String, direction: String) -> Bool {
         if (self.coordinate.x == emptyItem1.coordinate.x && self.coordinate.x + 1 == emptyItem2.coordinate.x) || (self.coordinate.x == emptyItem2.coordinate.x && self.coordinate.x + 1 == emptyItem1.coordinate.x) {
-            if self.coordinate.y == emptyItem1.coordinate.y + 1 && direction == "up" {
+            if self.coordinate.y == emptyItem1.coordinate.y + 1 && self.coordinate.y == emptyItem2.coordinate.y + 1 && direction == "up" {
                 exchange_slider(emptyItem1, emptyItem2)
                 return true
             }
-            if self.coordinate.y == emptyItem1.coordinate.y - 2 &&  direction == "down" {
+            if self.coordinate.y == emptyItem1.coordinate.y - 2 && self.coordinate.y == emptyItem2.coordinate.y - 2 && direction == "down" {
                 exchange_slider(emptyItem1, emptyItem2)
                 return true
             }
@@ -154,12 +154,12 @@ class GeneralSlider: SliderView {
     
     override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String, direction: String) -> Bool {
         if (self.coordinate.y == emptyItem1.coordinate.y && self.coordinate.y + 1 == emptyItem2.coordinate.y) || (self.coordinate.y == emptyItem2.coordinate.y && self.coordinate.y + 1 == emptyItem1.coordinate.y) {
-            if self.coordinate.x == emptyItem1.coordinate.x + 1 && direction == "left" {
+            if self.coordinate.x == emptyItem1.coordinate.x + 1 && self.coordinate.x == emptyItem2.coordinate.x + 1 && direction == "left" {
                 exchange_slider(emptyItem1, emptyItem2)
                 return true
             }
             
-            if self.coordinate.x == emptyItem1.coordinate.x - 1 && direction == "right" {
+            if self.coordinate.x == emptyItem1.coordinate.x - 1 && self.coordinate.x == emptyItem2.coordinate.x - 1 && direction == "right" {
                 exchange_slider(emptyItem1, emptyItem2)
                 return true
             }
@@ -221,12 +221,12 @@ class GuanYuSlider: SliderView {
     
     override func canMove(emptyItem1: SliderView, emptyItem2: SliderView, type: String, direction: String) -> Bool {
         if (self.coordinate.x == emptyItem1.coordinate.x && self.coordinate.x + 1 == emptyItem2.coordinate.x) || (self.coordinate.x == emptyItem2.coordinate.x && self.coordinate.x + 1 == emptyItem1.coordinate.x) {
-            if self.coordinate.y == emptyItem1.coordinate.y + 1 && direction == "up" {
+            if self.coordinate.y == emptyItem1.coordinate.y + 1 && self.coordinate.y == emptyItem2.coordinate.y + 1 && direction == "up" {
                 exchange_slider(emptyItem1, emptyItem2)
                 return true
             }
             
-            if self.coordinate.y == emptyItem1.coordinate.y - 1 && direction == "down" {
+            if self.coordinate.y == emptyItem1.coordinate.y - 1 && self.coordinate.y == emptyItem2.coordinate.y - 1 && direction == "down" {
                 exchange_slider(emptyItem1, emptyItem2)
                 return true
             }

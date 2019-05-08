@@ -133,6 +133,12 @@ class gameDetailViewController: UIViewController {
         }
     }
     
+    func judgeVictory(_ lord: LordSlider) {
+        if lord.coordinate.x == 1 && lord.coordinate.y == 3 {
+            print("win!")
+        }
+    }
+    
     @objc func swipe(_ recognizer:UISwipeGestureRecognizer){
         
         let view = recognizer.view
@@ -143,24 +149,36 @@ class gameDetailViewController: UIViewController {
         if item is SliderView {
             if recognizer.direction == .up{
                 if move(item as! SliderView, direction: "up") {
+                    if item is LordSlider {
+                        judgeVictory(item as! LordSlider)
+                    }
                     print("Can up Move")
                 } else {
                     print("Cannot Move")
                 }
             } else if recognizer.direction == .down{
                 if move(item as! SliderView, direction: "down") {
+                    if item is LordSlider {
+                        judgeVictory(item as! LordSlider)
+                    }
                     print("Can down Move")
                 } else {
                     print("Cannot Move")
                 }
             } else if recognizer.direction == .left{
                 if move(item as! SliderView, direction: "left") {
+                    if item is LordSlider {
+                        judgeVictory(item as! LordSlider)
+                    }
                     print("Can left Move")
                 } else {
                     print("Cannot Move")
                 }
             } else if recognizer.direction == .right{
                 if move(item as! SliderView, direction: "right") {
+                    if item is LordSlider {
+                        judgeVictory(item as! LordSlider)
+                    }
                     print("Can right Move")
                 } else {
                     print("Cannot Move")
