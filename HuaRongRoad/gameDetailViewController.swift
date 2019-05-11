@@ -19,7 +19,10 @@ class gameDetailViewController: UIViewController {
     var emptyBlock2: SliderView!
     let gap = 8
     
+    var step = 0
+    
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var stepNumber: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -127,6 +130,8 @@ class gameDetailViewController: UIViewController {
         }
         
         if item.canMove(emptyItem1: emptyBlock1, emptyItem2: emptyBlock2, type: judgeEmptyLocation(), direction: direction) {
+            step += 1
+            stepNumber.text = String(step)
             return true
         } else {
             return false
