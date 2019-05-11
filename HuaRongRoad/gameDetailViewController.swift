@@ -20,9 +20,12 @@ class gameDetailViewController: UIViewController {
     let gap = 8
     
     var step = 0
+    var timer = Timer()
+    var time = 0
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var stepNumber: UILabel!
+    @IBOutlet weak var timeText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +106,15 @@ class gameDetailViewController: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target:self, action:#selector(swipe(_:)))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
+        
+        timer = Timer.scheduledTimer(timeInterval: 1,
+                                     target:self,selector:#selector(self.updateTime),
+                                     userInfo:nil,repeats:true)
+    }
+    
+    @objc func updateTime() {
+        time += 1
+        timeText.text = String(time / 60) + "min " + String(time % 60) + "s"
     }
     
     func judgeEmptyLocation() -> String {

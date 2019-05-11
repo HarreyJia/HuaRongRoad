@@ -81,19 +81,19 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-nP-cNZ">
-                                <rect key="frame" x="87" y="87" width="119" height="71"/>
+                                <rect key="frame" x="87" y="87" width="101" height="71"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJy-nK-DzR">
-                                        <rect key="frame" x="0.0" y="0.0" width="119" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="步数:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okj-j3-hsG">
-                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="90.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE6-Zc-GQB">
-                                                <rect key="frame" x="108.5" y="0.0" width="10.5" height="20.5"/>
+                                                <rect key="frame" x="90.5" y="0.0" width="10.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -101,7 +101,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-Mi-jrb">
-                                        <rect key="frame" x="0.0" y="20.5" width="119" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="101" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfP-2o-sub">
                                                 <rect key="frame" x="0.0" y="0.0" width="39.5" height="20.5"/>
@@ -109,8 +109,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10min 59s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-bQ-kXS">
-                                                <rect key="frame" x="39.5" y="0.0" width="79.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0min 0s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFa-bQ-kXS">
+                                                <rect key="frame" x="39.5" y="0.0" width="61.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -118,7 +118,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu6-bV-R9U">
-                                        <rect key="frame" x="0.0" y="41" width="119" height="30"/>
+                                        <rect key="frame" x="0.0" y="41" width="101" height="30"/>
                                         <state key="normal" title="Back"/>
                                         <connections>
                                             <action selector="backToHome:" destination="dcs-2u-Mfq" eventType="touchUpInside" id="aht-23-08Y"/>
@@ -136,6 +136,7 @@
                     <connections>
                         <outlet property="containerView" destination="uEM-HU-7cv" id="e2d-52-h9M"/>
                         <outlet property="stepNumber" destination="QE6-Zc-GQB" id="Pdy-Ev-6n9"/>
+                        <outlet property="timeText" destination="uFa-bQ-kXS" id="Vf2-IA-pqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LY7-aH-WA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
