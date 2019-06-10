@@ -7,6 +7,7 @@ target 'HuaRongRoad' do
 
   # Pods for HuaRongRoad
   pod 'SnapKit', '~> 4.0.0'
+  pod 'Material', '~> 3.1.0'
 
   target 'HuaRongRoadTests' do
     inherit! :search_paths
