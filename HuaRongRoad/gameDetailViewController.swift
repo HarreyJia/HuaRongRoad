@@ -37,17 +37,18 @@ class gameDetailViewController: UIViewController {
         }
         
         let item = LordSlider.init(frame: CGRect(x: (2 - 1) % column * itemWidth, y: (2 - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
-        item.setTitle(title: "曹操")
+        item.setImage(imageName: "海绵宝宝")
         item.width = itemWidth
         item.row = row
         item.column = column
         item.updateCoordinate(coor: Coordinate(x: (2 - 1) % column, y: (2 - 1) / column))
         containerView.addSubview(item)
         
-        let generalList: [Int: String] = [1: "张飞", 4: "赵云", 9: "马超", 12: "黄忠"]
+        let generalList: [Int: String] = [1: "章鱼哥", 4: "蟹老板", 9: "珊迪", 12: "小蜗"]
         for item in generalList {
             let generalItem = GeneralSlider.init(frame: CGRect(x: (item.key - 1) % column * itemWidth, y: (item.key - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
-            generalItem.setTitle(title: item.value)
+//            generalItem.setTitle(title: item.value)
+            generalItem.setImage(imageName: item.value)
             generalItem.width = itemWidth
             generalItem.row = row
             generalItem.column = column
@@ -56,7 +57,7 @@ class gameDetailViewController: UIViewController {
         }
         
         let GuanYuitem = GuanYuSlider.init(frame: CGRect(x: (10 - 1) % column * itemWidth, y: (10 - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
-        GuanYuitem.setTitle(title: "关羽")
+        GuanYuitem.setImage(imageName: "派大星")
         GuanYuitem.width = itemWidth
         GuanYuitem.row = row
         GuanYuitem.column = column
@@ -66,7 +67,7 @@ class gameDetailViewController: UIViewController {
         let pawnList: [Int] = [14, 15, 17, 20]
         for location in pawnList {
             let pawnItem = PawnSlider.init(frame: CGRect(x: (location - 1) % column * itemWidth, y: (location - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
-            pawnItem.setTitle(title: "卒")
+            pawnItem.setImage(imageName: "痞老板")
             pawnItem.width = itemWidth
             pawnItem.row = row
             pawnItem.column = column
@@ -133,13 +134,13 @@ class gameDetailViewController: UIViewController {
     
     func move(_ item: SliderView, direction: String) -> Bool {
         
-        let type = item.titleLabel.text
-        
-        if type == "曹操" {
-            if judgeEmptyLocation() == "separated" {
-                return false
-            }
-        }
+//        let type = item.titleLabel.text
+//
+//        if type == "曹操" {
+//            if judgeEmptyLocation() == "separated" {
+//                return false
+//            }
+//        }
         
         if item.canMove(emptyItem1: emptyBlock1, emptyItem2: emptyBlock2, type: judgeEmptyLocation(), direction: direction) {
             step += 1

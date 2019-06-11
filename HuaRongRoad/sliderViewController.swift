@@ -24,27 +24,24 @@ class SliderView: UIView {
     var count: Int!
     
     var width: Int!
-    
-    var titleLabel: UILabel!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.layer.borderColor = UIColor.red.cgColor
         self.layer.borderWidth = 1
         self.backgroundColor = UIColor.orange
-        titleLabel = UILabel.init(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
-        titleLabel.adjustsFontSizeToFitWidth = true
-        titleLabel.textColor = UIColor.white
-        titleLabel.textAlignment = .center
-        self.addSubview(titleLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("This class does not support NSCoding")
     }
     
-    func setTitle(title: String) {
-        titleLabel.text = title
+    func setImage(imageName: String) {
+        let image = UIImage(named:imageName)
+        
+        let imageView = UIImageView(image: image)
+        imageView.frame.size = CGSize(width: self.frame.width, height: self.frame.height)
+        self.addSubview(imageView)
     }
     
     func updateCoordinate(coor: Coordinate) {
@@ -63,6 +60,14 @@ class SliderView: UIView {
 }
 
 class LordSlider: SliderView {
+    
+    override func setImage(imageName: String) {
+        let image = UIImage(named:imageName)
+        
+        let imageView = UIImageView(image: image)
+        imageView.frame.size = CGSize(width: self.frame.width * 2, height: self.frame.height * 2)
+        self.addSubview(imageView)
+    }
     
     override func updateCoordinate(coor: Coordinate) {
         coordinate = coor
@@ -124,6 +129,14 @@ class LordSlider: SliderView {
 
 class GeneralSlider: SliderView {
     
+    override func setImage(imageName: String) {
+        let image = UIImage(named:imageName)
+        
+        let imageView = UIImageView(image: image)
+        imageView.frame.size = CGSize(width: self.frame.width, height: self.frame.height * 2)
+        self.addSubview(imageView)
+    }
+
     override func updateCoordinate(coor: Coordinate) {
         coordinate = coor
         self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: width, height: 2 * width)
@@ -191,6 +204,14 @@ class GeneralSlider: SliderView {
 
 class GuanYuSlider: SliderView {
     
+    override func setImage(imageName: String) {
+        let image = UIImage(named:imageName)
+        
+        let imageView = UIImageView(image: image)
+        imageView.frame.size = CGSize(width: self.frame.width * 2, height: self.frame.height)
+        self.addSubview(imageView)
+    }
+
     override func updateCoordinate(coor: Coordinate) {
         coordinate = coor
         self.frame = CGRect(x: coor.x * width, y: coor.y * width, width: 2 * width, height: width)
@@ -302,4 +323,3 @@ class PawnSlider: SliderView {
         return false
     }
 }
-
