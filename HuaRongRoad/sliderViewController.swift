@@ -27,9 +27,12 @@ class SliderView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.layer.borderColor = UIColor.red.cgColor
-        self.layer.borderWidth = 1
-        self.backgroundColor = UIColor.orange
+        self.layer.borderColor = UIColor.black.cgColor
+        self.layer.borderWidth = 0.5
+        let red = 173
+        let green = 216
+        let blue = 230
+        self.backgroundColor = UIColor.init(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1)
     }
     
     required init?(coder aDecoder: NSCoder) {
