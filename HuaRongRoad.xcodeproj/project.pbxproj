@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0417F254227DC1D1002FC068 /* sliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417F253227DC1D1002FC068 /* sliderViewController.swift */; };
 		0417F256227DC43C002FC068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417F255227DC43C002FC068 /* ViewController.swift */; };
+		045EABBB22AF5B6A002F4224 /* userHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EABBA22AF5B6A002F4224 /* userHome.swift */; };
 		04C42154227AC86F003D7831 /* gameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C42153227AC86F003D7831 /* gameDetailViewController.swift */; };
 		04ECDC5F22799E96009CA390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDC5E22799E96009CA390 /* AppDelegate.swift */; };
 		04ECDC6422799E96009CA390 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDC6222799E96009CA390 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		0417F253227DC1D1002FC068 /* sliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderViewController.swift; sourceTree = "<group>"; };
 		0417F255227DC43C002FC068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		045EABBA22AF5B6A002F4224 /* userHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userHome.swift; sourceTree = "<group>"; };
 		04C42153227AC86F003D7831 /* gameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameDetailViewController.swift; sourceTree = "<group>"; };
 		04ECDC5B22799E96009CA390 /* HuaRongRoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuaRongRoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECDC5E22799E96009CA390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				04ECDC6A22799E97009CA390 /* Info.plist */,
 				04C42153227AC86F003D7831 /* gameDetailViewController.swift */,
 				0417F253227DC1D1002FC068 /* sliderViewController.swift */,
+				045EABBA22AF5B6A002F4224 /* userHome.swift */,
 			);
 			path = HuaRongRoad;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			files = (
 				04C42154227AC86F003D7831 /* gameDetailViewController.swift in Sources */,
 				04ECDC5F22799E96009CA390 /* AppDelegate.swift in Sources */,
+				045EABBB22AF5B6A002F4224 /* userHome.swift in Sources */,
 				0417F256227DC43C002FC068 /* ViewController.swift in Sources */,
 				0417F254227DC1D1002FC068 /* sliderViewController.swift in Sources */,
 			);
