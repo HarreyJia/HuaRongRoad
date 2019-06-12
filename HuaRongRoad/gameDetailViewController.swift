@@ -51,7 +51,6 @@ class gameDetailViewController: UIViewController {
         let generalList: [Int: String] = [1: "章鱼哥", 4: "蟹老板", 9: "珊迪", 12: "小蜗"]
         for item in generalList {
             let generalItem = GeneralSlider.init(frame: CGRect(x: (item.key - 1) % column * itemWidth, y: (item.key - 1) / column * itemWidth, width: itemWidth, height: itemWidth))
-//            generalItem.setTitle(title: item.value)
             generalItem.setImage(imageName: item.value)
             generalItem.width = itemWidth
             generalItem.row = row
@@ -137,15 +136,6 @@ class gameDetailViewController: UIViewController {
     }
     
     func move(_ item: SliderView, direction: String) -> Bool {
-        
-//        let type = item.titleLabel.text
-//
-//        if type == "曹操" {
-//            if judgeEmptyLocation() == "separated" {
-//                return false
-//            }
-//        }
-        
         if item.canMove(emptyItem1: emptyBlock1, emptyItem2: emptyBlock2, type: judgeEmptyLocation(), direction: direction) {
             step += 1
             stepNumber.text = String(step)
@@ -157,7 +147,21 @@ class gameDetailViewController: UIViewController {
     
     func judgeVictory(_ lord: LordSlider) {
         if lord.coordinate.x == 1 && lord.coordinate.y == 3 {
-            print("win!")
+            let alertController = UIAlertController(title: "!!!WIN THE GAME!!!",
+                                                    message: "You are so excellent!What do you want to do next", preferredStyle: .alert)
+            let backAction = UIAlertAction(title: "Back", style: .cancel, handler: {
+                action in
+                self.backToHome(self.backBtn)
+            })
+            let continueAction = UIAlertAction(title: "Continue", style: .default, handler: {
+                action in
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let homeVC = storyBoard.instantiateViewController(withIdentifier: "GameDetail")
+                self.present(homeVC, animated: true, completion: nil)
+            })
+            alertController.addAction(backAction)
+            alertController.addAction(continueAction)
+            self.present(alertController, animated: true, completion: nil)
         }
     }
     
