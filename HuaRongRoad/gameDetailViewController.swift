@@ -23,12 +23,16 @@ class gameDetailViewController: UIViewController {
     var timer = Timer()
     var time = 0
     
+    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var stepNumber: UILabel!
     @IBOutlet weak var timeText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backBtn.layer.cornerRadius = 10
+        
         itemWidth = (Int(view.frame.size.width) - gap) / column
         containerView.snp.makeConstraints { (make) in
             make.width.equalTo(Float(itemWidth) * Float(column))

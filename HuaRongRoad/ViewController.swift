@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userLogin.layer.cornerRadius = 10
     }
     
     @IBAction func goUserHome(_ sender: Any) {

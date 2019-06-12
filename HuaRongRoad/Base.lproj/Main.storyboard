@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-wX-Evj">
-                                <rect key="frame" x="106" y="144" width="202" height="37"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-wX-Evj">
+                                <rect key="frame" x="106" y="144" width="202" height="39.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-bB-UmC">
-                                <rect key="frame" x="35" y="207" width="344" height="300"/>
+                                <rect key="frame" x="35" y="209.5" width="344" height="300"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="jcN-IP-0Gg"/>
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1z-6A-qTL">
-                                <rect key="frame" x="106" y="677" width="202" height="64"/>
+                                <rect key="frame" x="106" y="679.5" width="202" height="64"/>
                                 <color key="backgroundColor" red="0.83053427934646606" green="0.55300217866897583" blue="0.068222835659980774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
                                 <state key="normal" title="Start Game">
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wvp-Ol-rNp">
-                                <rect key="frame" x="65" y="587" width="284" height="40"/>
+                                <rect key="frame" x="65" y="589.5" width="284" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItI-u2-kQg">
                                         <rect key="frame" x="0.0" y="0.0" width="121" height="40"/>
@@ -173,6 +173,7 @@
                         <viewLayoutGuide key="safeArea" id="4vR-1n-PRd"/>
                     </view>
                     <connections>
+                        <outlet property="backBtn" destination="Zu6-bV-R9U" id="Bp2-N1-3sg"/>
                         <outlet property="containerView" destination="uEM-HU-7cv" id="e2d-52-h9M"/>
                         <outlet property="stepNumber" destination="QE6-Zc-GQB" id="Pdy-Ev-6n9"/>
                         <outlet property="timeText" destination="uFa-bQ-kXS" id="Vf2-IA-pqf"/>

@@ -19,6 +19,8 @@ class userHome: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startGameButton.layer.cornerRadius = 10
+        
         introText.lineBreakMode = NSLineBreakMode.byWordWrapping
         
         introText.numberOfLines = 0
