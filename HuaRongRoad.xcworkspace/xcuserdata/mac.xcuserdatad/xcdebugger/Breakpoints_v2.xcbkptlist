@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuaRongRoad/gameDetailViewController.swift"
+            timestampString = "582013009.536249"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "gameDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HuaRongRoad.gameDetailViewController"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012355.398864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HuaRongRoad.gameDetailViewController"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012355.4041131"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HuaRongRoad.gameDetailViewController&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012355.405802"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HuaRongRoad.gameDetailViewController&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012355.407321"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.__deallocating_deinit"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012355.4088891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuaRongRoad/gameDetailViewController.swift"
+            timestampString = "582013009.536824"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "gameDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock1.getter : Swift.Optional&lt;HuaRongRoad.SliderView&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012358.774353"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock1.setter : Swift.Optional&lt;HuaRongRoad.SliderView&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012358.77621"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock1.modify : Swift.Optional&lt;HuaRongRoad.SliderView&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012358.77801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock1.modify : Swift.Optional&lt;HuaRongRoad.SliderView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012358.779951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HuaRongRoad.gameDetailViewController"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012358.78161"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HuaRongRoad.gameDetailViewController&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012358.783637"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "526">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuaRongRoad/gameDetailViewController.swift"
+            timestampString = "582013009.5371979"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "gameDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock2.getter : Swift.Optional&lt;HuaRongRoad.SliderView&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012359.571332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock2.setter : Swift.Optional&lt;HuaRongRoad.SliderView&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012359.576108"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock2.modify : Swift.Optional&lt;HuaRongRoad.SliderView&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012359.5805711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.emptyBlock2.modify : Swift.Optional&lt;HuaRongRoad.SliderView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012359.586609"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HuaRongRoad.gameDetailViewController"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012359.589401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "700">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HuaRongRoad.gameDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HuaRongRoad.gameDetailViewController&gt;"
+                  moduleName = "HuaRongRoad"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/IOS_Develop/HuaRongRoad/HuaRongRoad/gameDetailViewController.swift"
+                  timestampString = "582012359.592288"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "614">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuaRongRoad/gameDetailViewController.swift"
+            timestampString = "582013009.537544"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
