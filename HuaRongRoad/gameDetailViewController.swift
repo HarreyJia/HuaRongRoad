@@ -149,9 +149,9 @@ class gameDetailViewController: UIViewController {
     }
     
     func judgeVictory(_ lord: LordSlider) {
-        if lord.coordinate.x == 1 && lord.coordinate.y == 1 {
+        if lord.coordinate.x == 1 && lord.coordinate.y == 3 {
             self.gameOver = 1
-            let alertController = UIAlertController(title: "WIN THE GAME",
+            let alertController = UIAlertController(title: "Congratulations",
                                                     message: "So excellent that you've finished the game in " + String(self.step) + " steps and " + String(self.time) + " seconds", preferredStyle: .alert)
             let backAction = UIAlertAction(title: "Back", style: .cancel, handler: {
                 action in
