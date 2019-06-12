@@ -22,6 +22,7 @@ class gameDetailViewController: UIViewController {
     var step = 0
     var timer = Timer()
     var time = 0
+    var gameOver = 0
     
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var containerView: UIView!
@@ -117,8 +118,10 @@ class gameDetailViewController: UIViewController {
     }
     
     @objc func updateTime() {
-        time += 1
-        timeText.text = String(time / 60) + "min " + String(time % 60) + "s"
+        if (self.gameOver == 0) {
+            time += 1
+            timeText.text = String(time / 60) + "min " + String(time % 60) + "s"
+        }
     }
     
     func judgeEmptyLocation() -> String {
@@ -146,9 +149,10 @@ class gameDetailViewController: UIViewController {
     }
     
     func judgeVictory(_ lord: LordSlider) {
-        if lord.coordinate.x == 1 && lord.coordinate.y == 3 {
-            let alertController = UIAlertController(title: "!!!WIN THE GAME!!!",
-                                                    message: "You are so excellent!What do you want to do next", preferredStyle: .alert)
+        if lord.coordinate.x == 1 && lord.coordinate.y == 1 {
+            self.gameOver = 1
+            let alertController = UIAlertController(title: "WIN THE GAME",
+                                                    message: "So excellent that you've finished the game in " + String(self.step) + " steps and " + String(self.time) + " seconds", preferredStyle: .alert)
             let backAction = UIAlertAction(title: "Back", style: .cancel, handler: {
                 action in
                 self.backToHome(self.backBtn)
