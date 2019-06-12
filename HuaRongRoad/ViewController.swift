@@ -11,13 +11,16 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var userLogin: UIButton!
+    @IBOutlet weak var nameInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func goUserHome(_ sender: Any) {
+        
+        UserDefaults().setValue(nameInput.text, forKey: "userName")
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let homeVC = storyBoard.instantiateViewController(withIdentifier: "Home")
         self.present(homeVC, animated: true, completion: nil)

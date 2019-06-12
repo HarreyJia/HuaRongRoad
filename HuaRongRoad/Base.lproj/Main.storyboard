@@ -62,6 +62,7 @@
                     <navigationItem key="navigationItem" id="j32-2d-WMI"/>
                     <connections>
                         <outlet property="startGameButton" destination="L1z-6A-qTL" id="KeA-cD-1bF"/>
+                        <outlet property="userName" destination="O9q-NB-igw" id="RJ4-f3-s2P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -233,6 +234,7 @@
                         <viewLayoutGuide key="safeArea" id="nRn-Lr-uUc"/>
                     </view>
                     <connections>
+                        <outlet property="nameInput" destination="vao-fb-gtc" id="eKJ-Fo-z8S"/>
                         <outlet property="userLogin" destination="rMv-63-nhB" id="2dU-AZ-rO4"/>
                     </connections>
                 </viewController>

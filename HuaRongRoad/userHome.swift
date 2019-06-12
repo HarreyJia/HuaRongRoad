@@ -11,10 +11,14 @@ import UIKit
 class userHome: UIViewController {
     
     @IBOutlet weak var startGameButton: UIButton!
+    @IBOutlet weak var userName: UILabel!
+    
+    var nickName = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        userName.text = UserDefaults().string(forKey: "userName") ?? ""
     }
     
     
