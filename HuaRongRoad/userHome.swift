@@ -25,7 +25,7 @@ class userHome: UIViewController {
         
         introText.numberOfLines = 0
         
-        introText.text = "         The SpongeBob Escape is developed by Jia Lingxiang, a student at Nankai University's School of Software. It is based on the improvement of the Three Kingdoms Huarong Road, using the classic image of SpongeBob to play games for childhood. The basic gameplay is similar to that of the Three Kingdoms Huarong Road. You only need the SpongeBob to reach the exit."
+        introText.text = "         The SpongeBob Escape is developed by Jia Lingxiang, a student at Nankai University's College of Software. It is based on the improvement of classical HuaRong Road Game, using the characters of SpongeBob to recollect the childhood. The basic gameplay is similar to that of the classical HuaRong Road. You only need the SpongeBob to reach the exit and win the game."
         
         
         userName.text = UserDefaults().string(forKey: "userName") ?? ""
